@@ -1,0 +1,33 @@
+@use "bootstrap/scss/bootstrap";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 30px 6px rgba(137, 137, 137, 0.5);
+  font-family: Comic Sans MS;
+
+  & img {
+    border-radius: 10px;
+  }
+}
+
+.dados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  margin-left: 2vh;
+  padding: 20px;
+
+  & h2 {
+    margin-bottom: 25px;
+  }
+
+  & p {
+    font-size: larger;
+    color: rgba($color: blue, $alpha: 0.8);
+  }
+}
