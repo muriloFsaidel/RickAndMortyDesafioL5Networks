@@ -1,5 +1,23 @@
 @use "bootstrap/scss/bootstrap";
 
+.container {
+                display: flex;
+                align-items: center;
+                min-width: 100vw;
+                border-radius: 10px;
+                box-shadow: 1px 1px 30px 6px rgba(137, 137, 137, 0.5);
+                font-family: Comic Sans MS;
+                gap: 50px;
+}
+
+.conteudo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+}
+
 .tbs {
                 height: 650px;
                 overflow: scroll;
@@ -28,10 +46,16 @@ a {
                 cursor: pointer;
 }
 
-.btvol{
+.btvol {
                 display: flex;
+                gap: 42px;
 }
 
-#ultimo{
+#ultimo {
                 color: white;
+}
+
+h1 {
+    font-weight: 550;
+    color: rgba($color: #191970, $alpha: 0.75);
 }

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { DetalheLocalizacao } from '../../../features/models/detalheLocalizacao';
+import { MenuComponent } from '../menu/menu.component';
 @Component({
   selector: 'app-detalhe-localizacao',
-  imports: [RouterLink],
+  imports: [RouterLink, MenuComponent],
   templateUrl: './detalhe-localizacao.component.html',
   styleUrl: './detalhe-localizacao.component.scss'
 })

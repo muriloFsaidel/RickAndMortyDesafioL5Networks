@@ -20,8 +20,8 @@ export class GuardiaoService implements CanActivate {
       }
 
       if(this.servico.estaConectado()){
-        if(route.url.length == 0) this.router.navigate(['main', this.servico.obterUsuario()])
-        if(route.url[0].path == 'login') this.router.navigate(['main', this.servico.obterUsuario()]);
+        if(route.url.length == 0) this.router.navigate(['meuPerfil', this.servico.obterUsuario()])
+        if(route.url[0].path == 'login') this.router.navigate(['meuPerfil', this.servico.obterUsuario()]);
         return true;
       }
       this.router.navigate(['login']);

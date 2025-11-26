@@ -1,9 +1,10 @@
 import { Component, OnInit, signal, WritableSignal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { MenuComponent } from '../menu/menu.component';
 
 @Component({
   selector: 'app-meu-perfil',
-  imports: [],
+  imports: [MenuComponent],
   templateUrl: './meu-perfil.component.html',
   styleUrl: './meu-perfil.component.scss'
 })

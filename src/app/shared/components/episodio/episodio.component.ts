@@ -7,10 +7,11 @@ import { Episode } from '../../../features/models/episodio';
 import { NgIf, NgForOf, AsyncPipe } from "@angular/common";
 import { NgFor } from '@angular/common';
 import { CEpisodio } from '../../../features/models/CEpisodio';
+import { MenuComponent } from '../menu/menu.component';
 
 @Component({
   selector: 'app-episodio',
-  imports: [RouterLink, NgIf, NgForOf, NgFor, AsyncPipe],
+  imports: [RouterLink, NgIf, NgForOf, NgFor, AsyncPipe, MenuComponent],
   templateUrl: './episodio.component.html',
   styleUrl: './episodio.component.scss'
 })

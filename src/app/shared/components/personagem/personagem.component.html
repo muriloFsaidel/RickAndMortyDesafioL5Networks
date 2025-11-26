@@ -1,37 +1,45 @@
-<div class="table-responsive-lg tbs" infiniteScroll (scroll)="onScroll()">
-      <table class="table table-info table-striped table-hover table-bordered ">
-            <thead>
-                  <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Details</th>
-                  </tr>
+<div class="container">
+      <app-menu></app-menu>
+      <div class="conteudo">
+            <h1>Personagens</h1>
+            <div class="table-responsive-lg tbs" infiniteScroll (scroll)="onScroll()">
+                  <table class="table table-info table-striped table-hover table-bordered ">
+                        <thead>
+                              <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Details</th>
+                              </tr>
 
-            </thead>
-            <tbody class="table-group-divider" *ngIf="personagens | async as pers">
-                  <tr *ngFor=" let personagem of pers" class="align-middle table-dark table-striped">
-                        <td class="table-active">{{personagem.name}}</td>
-                        <td>{{personagem.status}}</td>
-                        <td class=" table-warning" id="redireciona"
-                              (click)="redirecionarComObjeto(personagem.name,personagem.image,personagem.status,personagem.species,personagem.gender)">
-                              ...</td>
-                  </tr>
-            </tbody>
-            <tbody *ngIf="nextPersonagens" class="table-group-divider" >
-                        <tr class="align-middle table-dark table-striped" *ngFor="let personagem of nextPersonagens">
-                              <td class="table-active">{{personagem.name}}</td>
-                              <td>{{personagem.status}}</td>
-                              <td class=" table-warning" id="redireciona"
-                                    (click)="redirecionarComObjeto(personagem.name,personagem.image,personagem.status,personagem.species,personagem.gender)">
-                                    ...</td>
+                        </thead>
+                        <tbody class="table-group-divider" *ngIf="personagens | async as pers">
+                              <tr *ngFor=" let personagem of pers" class="align-middle table-dark table-striped">
+                                    <td class="table-active">{{personagem.name}}</td>
+                                    <td>{{personagem.status}}</td>
+                                    <td class=" table-warning" id="redireciona"
+                                          (click)="redirecionarComObjeto(personagem.name,personagem.image,personagem.status,personagem.species,personagem.gender)">
+                                          ...</td>
+                              </tr>
+                        </tbody>
+                        <tbody *ngIf="nextPersonagens" class="table-group-divider">
+                              <tr class="align-middle table-dark table-striped"
+                                    *ngFor="let personagem of nextPersonagens">
+                                    <td class="table-active">{{personagem.name}}</td>
+                                    <td>{{personagem.status}}</td>
+                                    <td class=" table-warning" id="redireciona"
+                                          (click)="redirecionarComObjeto(personagem.name,personagem.image,personagem.status,personagem.species,personagem.gender)">
+                                          ...</td>
 
-                        </tr>
-                  </tbody>
+                              </tr>
+                        </tbody>
 
-      </table>
-</div>
+                  </table>
+            </div>
+      </div>
 
-<div class="btvol">
-      <a routerLink={{voltar}}>voltar</a>
-       <a (click)="buscarUltimo()" id="ultimo">carregar últimos personagens</a>
+      <div class="btvol">
+            <a routerLink={{voltar}}>voltar</a>
+            <a (click)="buscarUltimo()" id="ultimo">carregar últimos personagens</a>
+      </div>
+
 </div>

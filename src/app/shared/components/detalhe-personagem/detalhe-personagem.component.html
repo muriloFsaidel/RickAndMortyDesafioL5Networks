@@ -1,15 +1,17 @@
 <div class="container">
-                <img src="{{detalhesPersonagem.image}}" alt="personagem">
-                <div class="dados">
-                                <h2>{{detalhesPersonagem.name}}</h2>
-                                <h3>Status</h3>
-                                <p>{{detalhesPersonagem.status}}</p>
-                                <h3>Espécie</h3>
-                                <p>{{detalhesPersonagem.species}}</p>
-                                <h3>Gênero</h3>
-                                <p>{{detalhesPersonagem.gender}}</p>
-                                <a routerLink={{voltar}}>Voltar</a>
-
+                <app-menu></app-menu>
+                <div class="conteudo">
+                                <img src="{{detalhesPersonagem.image}}" alt="personagem">
+                                <div class="dados">
+                                                <h2>{{detalhesPersonagem.name}}</h2>
+                                                <h3>Status</h3>
+                                                <p>{{detalhesPersonagem.status}}</p>
+                                                <h3>Espécie</h3>
+                                                <p>{{detalhesPersonagem.species}}</p>
+                                                <h3>Gênero</h3>
+                                                <p>{{detalhesPersonagem.gender}}</p>
+                                                <a routerLink={{voltar}}>Voltar</a>
+                                </div>
                 </div>
 
 </div>

@@ -6,10 +6,11 @@ import { NgIf, AsyncPipe, NgFor, NgForOf } from "@angular/common";
 import { map, Observable } from 'rxjs';
 import { Location } from '../../../features/models/localizacao';
 import { CLocalizacao } from '../../../features/models/CLocalizacao';
+import { MenuComponent } from '../menu/menu.component';
 
 @Component({
   selector: 'app-localizacao',
-  imports: [RouterLink, NgIf, AsyncPipe, NgFor, NgForOf],
+  imports: [RouterLink, NgIf, AsyncPipe, NgFor, NgForOf,MenuComponent],
   templateUrl: './localizacao.component.html',
   styleUrl: './localizacao.component.scss'
 })

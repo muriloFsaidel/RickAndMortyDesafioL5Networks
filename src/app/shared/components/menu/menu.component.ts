@@ -26,7 +26,6 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     this.opcao = 'meuPerfil';
     this.usuario = localStorage.getItem(AUTENTICADO);
-    this.route.navigate(['meuPerfil', this.usuario]);
     this.dadoPesquisa = '';
   };
 
@@ -57,6 +56,7 @@ export class MenuComponent implements OnInit {
     document.getElementById("fechar")?.classList.add("esconder");
     document.querySelector(".operacoes")?.classList.add("encolher");
     document.querySelector(".barra-de-pesquisa")?.classList.add("esconder");
+     document.querySelector("header")?.classList.add("ajuste");
   }
 
   mostrarMenu() {
@@ -65,5 +65,6 @@ export class MenuComponent implements OnInit {
     document.getElementById("fechar")?.classList.remove("esconder");
     document.querySelector(".operacoes")?.classList.remove("encolher");
     document.querySelector(".barra-de-pesquisa")?.classList.remove("esconder");
+    document.querySelector("header")?.classList.remove("ajuste");
   }
 }

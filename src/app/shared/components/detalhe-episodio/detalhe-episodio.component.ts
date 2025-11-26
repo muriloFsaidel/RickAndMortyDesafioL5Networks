@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, ActivatedRoute } from '@angular/router';
 import { DetalheEpisodio } from '../../../features/models/detalheEpisiodio';
+import { MenuComponent } from '../menu/menu.component';
 
 @Component({
   selector: 'app-detalhe-episodio',
-  imports: [RouterLink],
+  imports: [RouterLink, MenuComponent],
   templateUrl: './detalhe-episodio.component.html',
   styleUrl: './detalhe-episodio.component.scss'
 })

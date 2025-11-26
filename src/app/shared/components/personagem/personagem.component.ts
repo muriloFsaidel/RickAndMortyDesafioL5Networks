@@ -6,10 +6,11 @@ import { map, Observable } from 'rxjs';
 import { Character } from '../../../features/models/personagem';
 import { NgForOf, NgIf, AsyncPipe, NgFor } from "@angular/common";
 import { Cpersonagem } from '../../../features/models/Cpersonagem';
+import { MenuComponent } from '../menu/menu.component';
 
 @Component({
     selector: 'app-personagem',
-    imports: [RouterLink, NgForOf, NgIf, AsyncPipe, NgFor],
+    imports: [RouterLink, NgForOf, NgIf, AsyncPipe, NgFor, MenuComponent],
     templateUrl: './personagem.component.html',
     styleUrl: './personagem.component.scss'
 })

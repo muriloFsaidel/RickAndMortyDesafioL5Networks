@@ -2,16 +2,18 @@
 
 .container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-width: 300px;
+  min-width: 100vw;
   border-radius: 10px;
   box-shadow: 1px 1px 30px 6px rgba(137, 137, 137, 0.5);
-  font-family: Comic Sans MS;
+  //font-family: Comic Sans MS;
+  color: #191970;
+  gap: 50px;
+}
 
-  & img {
-    border-radius: 10px;
-  }
+.conteudo {
+  box-shadow: 1px 1px 30px 6px rgba(137, 137, 137, 0.5);
+  border-radius: 50px;
 }
 
 .dados {
