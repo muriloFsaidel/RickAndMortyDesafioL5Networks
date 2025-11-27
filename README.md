@@ -58,7 +58,7 @@
 - CSS
 - Typescript
    
-#Instalação
+# Instalação
   
   - Possuir Node.js instalado no mínimo versão 22.11.0 (versão da minha máquina); <br>
   - No terminal, acesse a raiz do projeto, e execute npm install para instalar as dependências;<br>
